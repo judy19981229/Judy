@@ -3,7 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Judy.iml" filepath="$PROJECT_DIR$/Judy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MavenTest/MavenTest.iml" filepath="$PROJECT_DIR$/MavenTest/MavenTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-01-link/dubbo-01-link.iml" filepath="$PROJECT_DIR$/dubbo-01-link/dubbo-01-link.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-02-link/dubbo-02-link.iml" filepath="$PROJECT_DIR$/dubbo-02-link/dubbo-02-link.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-03-link-interface/dubbo-03-link-interface.iml" filepath="$PROJECT_DIR$/dubbo-03-link-interface/dubbo-03-link-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-04-link-userServiceProvider/dubbo-04-link-userServiceProvider.iml" filepath="$PROJECT_DIR$/dubbo-04-link-userServiceProvider/dubbo-04-link-userServiceProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-05-link-consumer/dubbo-05-link-consumer.iml" filepath="$PROJECT_DIR$/dubbo-05-link-consumer/dubbo-05-link-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CRM/src/main/main.iml" filepath="$PROJECT_DIR$/CRM/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MavenTest/src/test/test.iml" filepath="$PROJECT_DIR$/MavenTest/src/test/test.iml" />
     </modules>
   </component>
 </project>

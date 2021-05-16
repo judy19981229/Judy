@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Downloads/IdeaProjects-master/CRM" />
+    <file type="web" url="file://$PROJECT_DIR$/CRM" />
+    <file type="web" url="file://$PROJECT_DIR$/Dubbo-001-link-service-provider" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-01-link" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-02-link" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-04-link-userServiceProvider" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-05-link-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-link-01" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-link-service-provider" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/MavenTest/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-01-link/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-02-link/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-03-link-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-04-link-userServiceProvider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-05-link-consumer/pom.xml" />
       </list>
     </option>
   </component>

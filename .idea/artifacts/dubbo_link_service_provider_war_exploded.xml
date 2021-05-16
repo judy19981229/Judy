@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dubbo-link-service-provider:war exploded">
+    <output-path>$PROJECT_DIR$/dubbo-link-service-provider/target/dubbo-link-service-provider</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>dubbo-link-service-provider</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dubbo-link-service-provider" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dubbo-link-service-provider/target/dubbo-link-service-provider/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="dubbo-link-service-provider/web/Web" />
+    </root>
+  </artifact>
+</component>
