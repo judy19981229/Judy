@@ -2,6 +2,7 @@ package model;
 
 import java.io.Serializable;
 
+//dubbo中实体类需要实现序列化
 public class User implements Serializable {
     private Integer id;
     private String name;
