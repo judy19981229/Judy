@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="dubbo-05-link-consumer.war">
+    <root id="archive" name="dubbo-05-link-consumer-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="dubbo-05-link-consumer:war exploded" />
     </root>
   </artifact>

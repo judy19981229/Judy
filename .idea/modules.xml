@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Judy.iml" filepath="$PROJECT_DIR$/Judy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-maven-parent/01-maven-parent.iml" filepath="$PROJECT_DIR$/01-maven-parent/01-maven-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-maven-son1/02-maven-son1.iml" filepath="$PROJECT_DIR$/02-maven-son1/02-maven-son1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-maven-son2/03-maven-son2.iml" filepath="$PROJECT_DIR$/03-maven-son2/03-maven-son2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-maven-son3/04-maven-son3.iml" filepath="$PROJECT_DIR$/04-maven-son3/04-maven-son3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-maven-son4/05-maven-son4.iml" filepath="$PROJECT_DIR$/05-maven-son4/05-maven-son4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo.iml" filepath="$PROJECT_DIR$/Dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jedis/Jedis.iml" filepath="$PROJECT_DIR$/Jedis/Jedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-01-link/dubbo-01-link.iml" filepath="$PROJECT_DIR$/dubbo-01-link/dubbo-01-link.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-02-link/dubbo-02-link.iml" filepath="$PROJECT_DIR$/dubbo-02-link/dubbo-02-link.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-03-link-interface/dubbo-03-link-interface.iml" filepath="$PROJECT_DIR$/dubbo-03-link-interface/dubbo-03-link-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-04-link-userServiceProvider/dubbo-04-link-userServiceProvider.iml" filepath="$PROJECT_DIR$/dubbo-04-link-userServiceProvider/dubbo-04-link-userServiceProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-05-link-consumer/dubbo-05-link-consumer.iml" filepath="$PROJECT_DIR$/dubbo-05-link-consumer/dubbo-05-link-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-06-zk-interface/dubbo-06-zk-interface.iml" filepath="$PROJECT_DIR$/dubbo-06-zk-interface/dubbo-06-zk-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zk-consumer/dubbo-zk-consumer.iml" filepath="$PROJECT_DIR$/dubbo-zk-consumer/dubbo-zk-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zk-consumer-multi/dubbo-zk-consumer-multi.iml" filepath="$PROJECT_DIR$/dubbo-zk-consumer-multi/dubbo-zk-consumer-multi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zk-userService-multi/dubbo-zk-userService-multi.iml" filepath="$PROJECT_DIR$/dubbo-zk-userService-multi/dubbo-zk-userService-multi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zk-userServiceProvider/dubbo-zk-userServiceProvider.iml" filepath="$PROJECT_DIR$/dubbo-zk-userServiceProvider/dubbo-zk-userServiceProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/CRM/src/main/main.iml" filepath="$PROJECT_DIR$/CRM/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/MavenTest/src/test/test.iml" filepath="$PROJECT_DIR$/MavenTest/src/test/test.iml" />
     </modules>

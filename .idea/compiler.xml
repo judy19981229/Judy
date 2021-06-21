@@ -6,24 +6,60 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-02-link" />
         <module name="dubbo-01-link" />
         <module name="dubbo-04-link-userServiceProvider" />
-        <module name="dubbo-03-link-interface" />
-        <module name="dubbo-02-link" />
+        <module name="05-maven-son4" />
         <module name="dubbo-05-link-consumer" />
+        <module name="dubbo-zk-userService-multi" />
+        <module name="03-maven-son2" />
+        <module name="Jedis" />
+        <module name="dubbo-06-zk-interface" />
+        <module name="dubbo-zk-consumer-multi" />
+        <module name="dubbo-zk-consumer" />
+        <module name="dubbo-03-link-interface" />
+        <module name="dubbo-zk-userServiceProvider" />
+        <module name="04-maven-son3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CRM" target="1.8" />
-      <module name="Dubbo-001-link-service-provider" target="1.7" />
+      <module name="01-maven-parent" target="1.8" />
+      <module name="02-maven-son1" target="1.8" />
+      <module name="03-maven-son2" target="1.8" />
+      <module name="04-maven-son3" target="1.8" />
+      <module name="05-maven-son4" target="1.8" />
       <module name="dubbo-01-link" target="1.8" />
       <module name="dubbo-02-link" target="1.8" />
       <module name="dubbo-03-link-interface" target="8" />
       <module name="dubbo-04-link-userServiceProvider" target="1.8" />
-      <module name="dubbo-05-link-consumer" target="1.7" />
-      <module name="dubbo-link-01" target="1.7" />
-      <module name="dubbo-link-service-provider" target="1.7" />
-      <module name="MavenTest" target="1.8" />
+      <module name="dubbo-05-link-consumer" target="1.8" />
+      <module name="dubbo-06-zk-interface" target="8" />
+      <module name="dubbo-zk-consumer" target="1.8" />
+      <module name="dubbo-zk-consumer-multi" target="1.8" />
+      <module name="dubbo-zk-userService-multi" target="1.8" />
+      <module name="dubbo-zk-userServiceProvider" target="1.8" />
+      <module name="Jedis" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01-maven-parent" options="" />
+      <module name="02-maven-son1" options="" />
+      <module name="03-maven-son2" options="" />
+      <module name="04-maven-son3" options="" />
+      <module name="05-maven-son4" options="" />
+      <module name="Jedis" options="" />
+      <module name="dubbo-01-link" options="" />
+      <module name="dubbo-02-link" options="" />
+      <module name="dubbo-03-link-interface" options="" />
+      <module name="dubbo-04-link-userServiceProvider" options="" />
+      <module name="dubbo-05-link-consumer" options="" />
+      <module name="dubbo-06-zk-interface" options="" />
+      <module name="dubbo-zk-consumer" options="" />
+      <module name="dubbo-zk-consumer-multi" options="" />
+      <module name="dubbo-zk-userService-multi" options="" />
+      <module name="dubbo-zk-userServiceProvider" options="" />
+    </option>
   </component>
 </project>

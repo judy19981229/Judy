@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dubbo-zk-consumer:war exploded">
+    <output-path>$PROJECT_DIR$/dubbo-zk-consumer/target/dubbo-zk-consumer-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>dubbo-zk-consumer</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dubbo-zk-consumer" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.5" />
+          <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.6.2" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
+          <element id="library" level="project" name="Maven: org.jboss.netty:netty:3.2.5.Final" />
+          <element id="archive" name="dubbo-06-zk-interface-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubbo-06-zk-interface" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dubbo-zk-consumer/target/dubbo-zk-consumer-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="dubbo-zk-consumer/web/Web" />
+    </root>
+  </artifact>
+</component>

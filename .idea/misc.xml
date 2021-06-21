@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$USER_HOME$/Downloads/IdeaProjects-master/CRM" />
+    <file type="web" url="file://$PROJECT_DIR$/03-maven-son2" />
     <file type="web" url="file://$PROJECT_DIR$/CRM" />
     <file type="web" url="file://$PROJECT_DIR$/Dubbo-001-link-service-provider" />
     <file type="web" url="file://$PROJECT_DIR$/dubbo-01-link" />
@@ -10,6 +11,10 @@
     <file type="web" url="file://$PROJECT_DIR$/dubbo-05-link-consumer" />
     <file type="web" url="file://$PROJECT_DIR$/dubbo-link-01" />
     <file type="web" url="file://$PROJECT_DIR$/dubbo-link-service-provider" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-zk-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-zk-consumer-multi" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-zk-userService-multi" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-zk-userServiceProvider" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -19,6 +24,14 @@
         <option value="$PROJECT_DIR$/dubbo-03-link-interface/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-04-link-userServiceProvider/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-05-link-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-06-zk-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zk-userServiceProvider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zk-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zk-userService-multi/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zk-consumer-multi/pom.xml" />
+        <option value="$PROJECT_DIR$/Jedis/pom.xml" />
+        <option value="$PROJECT_DIR$/01-maven-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/05-maven-son4/pom.xml" />
       </list>
     </option>
   </component>

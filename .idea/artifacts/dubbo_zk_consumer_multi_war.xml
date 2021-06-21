@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubbo-zk-consumer-multi:war">
+    <output-path>$PROJECT_DIR$/dubbo-zk-consumer-multi/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>dubbo-zk-consumer-multi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="dubbo-zk-consumer-multi-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dubbo-zk-consumer-multi:war exploded" />
+    </root>
+  </artifact>
+</component>

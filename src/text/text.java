@@ -9,5 +9,6 @@ public class text {
         for(int i:nums){
             System.out.println(i);
         }
+        System.out.println("2%5="+2%5);
     }
 }

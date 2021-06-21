@@ -83,7 +83,7 @@
     <context:component-scan base-package="model"/>-->
 
     <!--引入dubbo-->
-<!--    <import resource="dubbo-userService-comsumer.xml"/>-->
+    <import resource="dubbo-userService-comsumer.xml"/>
 
     <!--自动生成动态代理对象-->
     <aop:aspectj-autoproxy/>
