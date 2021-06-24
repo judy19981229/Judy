@@ -2,9 +2,16 @@ package text;
 
 public class LeetCode202 {
     public static void main(String[] args) {
-
+        int sum=0;
+        int num=1;
+        for(;num<=100000;num++){
+            if(isHappy(num)){
+                sum+=num;
+            }
+        }
+        System.out.println(sum);
     }
-    public boolean isHappy(int n) {
+    public static boolean isHappy(int n) {
         int fast=n;
         int slow=n;
         do {
@@ -16,7 +23,7 @@ public class LeetCode202 {
         } while(fast!=slow);
         return false;
     }
-    int getNext(int n){
+    static int getNext(int n){
         int sum=0;
         while(n>0){
             sum+=(n%10)*(n%10);
