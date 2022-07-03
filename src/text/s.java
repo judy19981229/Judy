@@ -7,6 +7,12 @@ public class s {
 
     static double r;
 
+    public static void main(String[] args) {
+        //二分法开根号
+        sqrt(36);
+        System.out.println(r);
+    }
+
     public static void sqrt(double number) {
         process(number, 0, number);
     }
@@ -28,11 +34,6 @@ public class s {
         process(number, min, max);
     }
 
-    public static void main(String[] args) {
-        //二分法开根号
-        sqrt(25);
-        System.out.println(r);
-    }
 }
 
 

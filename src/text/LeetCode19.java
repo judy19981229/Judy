@@ -5,24 +5,20 @@ public class LeetCode19 {
 
     }
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode hair=new ListNode(0,head);
-        ListNode con=hair;//删除节点的前一个节点con
-        ListNode cur,tail;//删除节点cur，删除节点的下一个节点tail
-        ListNode tmp=head;
-        int length=1;//计算链表长度
-        while(tmp.next!=null){
-            tmp=tmp.next;
-            length++;
+        //虚拟头节点，防止要删除头节点
+        ListNode hair = new ListNode(0, head);
+        ListNode fast = head;
+        //慢指针指向虚拟头节点，这样快指针走到null的时候，慢指针就是要删除节点的前一个节点
+        ListNode slow = hair;
+        //快指针先走n步
+        while(n-- > 0){
+            fast = fast.next;
         }
-        int num=length-n;
-        while(num>0){
-            con=con.next;
-            num--;
+        while(fast != null){
+            fast = fast.next;
+            slow = slow.next;
         }
-        cur=con.next;
-        tail=con.next.next;
-        cur.next=null;//断开删除节点和下一个节点
-        con.next=tail;//连上删除节点的前一个节点和下一个节点
+        slow.next = slow.next.next;
         return hair.next;
     }
 }

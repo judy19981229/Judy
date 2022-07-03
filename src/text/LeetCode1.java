@@ -13,6 +13,7 @@ public class LeetCode1 {
     }
 
     public static int[] twoSum(int[] nums, int target) {
+        //map存放的key是数组中的值，value为该值的下标
         HashMap<Integer,Integer> map=new HashMap();
         int[] result= new int[2];
         for(int i=0;i<nums.length;i++){
