@@ -11,21 +11,21 @@ public class LeetCode102 {
         //特殊情况，返回空list集
         if(root == null) return result;
         //用一个队列来存储节点，先进先出，先遍历上一层节点出队的时候，也要入队他们的子节点
-        Deque<TreeNode> queue = new LinkedList<>();
+        Deque<TreeNode> deque = new LinkedList<>();
         //先把节点入栈
-        queue.add(root);
+        deque.add(root);
         //如果栈不为空就说明还有节点没遍历完
-        while(!queue.isEmpty()){
+        while(!deque.isEmpty()){
             //size是当前这一层的节点数，要把这一层每个节点都遍历完，同时把他们的子节点加入队列中
-            int size = queue.size();
+            int size = deque.size();
             //存放当前这一层val的list
             List<Integer> list = new ArrayList<>();
             while(size-- > 0){
                 //遍历一次出队一个节点，把它的val值放入lis中，把它的left和right放入队列中
-                root = queue.poll();
+                root = deque.removeFirst();
                 list.add(root.val);
-                if(root.left != null) queue.add(root.left)  ;
-                if(root.right != null) queue.add(root.right)  ;
+                if(root.left != null) deque.addLast(root.left);
+                if(root.right != null) deque.addLast(root.right);
 
             }
             //遍历完这一层之后，把存放这一层的list放入结果集中

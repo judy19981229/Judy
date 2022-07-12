@@ -17,7 +17,6 @@
     interface：调用远程接口的全限定类名
     url：访问服务接口的地址
     registry：不使用注册中心，值为N/A-->
-    <dubbo:reference id="userService" interface="service.UserService"
-                     url="dubbo://localhost:20880" registry="N/A" />
+    <dubbo:reference id="userService" interface="service.UserService"/>
 
 </beans>
