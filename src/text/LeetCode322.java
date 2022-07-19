@@ -3,6 +3,7 @@ package text;
 import java.util.Arrays;
 
 public class LeetCode322 {
+    //找amount - coins[0]/coins[1]/.../coins[coins.length - 1]的最少硬币个数 + 1
     public int coinChange(int[] coins, int amount) {
         //特殊情况
         if(amount == 0) return 0;

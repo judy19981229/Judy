@@ -7,28 +7,17 @@ public class LeetCode206 {
 
     }
 
-    public ListNode reverseList(ListNode head) {
-        ListNode pre=null;
-        ListNode cur=head;
-        ListNode tmp;
-        while(cur!=null){
+    public static ListNode reverseList(ListNode head) {
+        if(head==null || head.next == null){return head;}
+        ListNode pre=null; //前一个节点
+        ListNode cur=head;//当前节点
+        ListNode tmp; //临时节点(当前节点下一个节点)
+        while(cur!=null){//当前节点不为空
+            //临时节点是当前节点下一个节点
             tmp=cur.next;
+            //当前节点指向前一个节点(反转)
             cur.next=pre;
-            pre=cur;
-            cur=tmp;
-        }
-        return pre ;
-    }
-
-    private static ListNode reverseList1(ListNode head) {
-        if(head==null){return head;}
-        ListNode pre=head; //当前节点
-        ListNode cur=head.next;//下一个节点
-        ListNode tmp; //临时节点
-        while(cur!=null){//下一个节点为空说明是尾节点
-            //临时节点是下一个节点原先指向的下一个节点
-            tmp=cur.next;
-            cur.next=pre;
+            //前一个节点和当前节点向后挪一步
             pre=cur;
             cur=tmp;
         }

@@ -7,23 +7,24 @@ import java.util.LinkedList;
 public class LeetCode226 {
 
     public TreeNode invertTree(TreeNode root) {
-        if(root == null) return root;
-        //栈用来存储节点
+        //特殊情况
+        if(root == null || (root.left == null && root.right == null)) return root;
+        //栈用来存储节点 先进先出
         Deque<TreeNode> stack = new LinkedList<>();
         TreeNode cur = root;
-        //如果cur不为空，说明有可能还有子节点 需要继续遍历
-        //如果stack不为空，说明有父节点，需要继续遍历
-        while(cur != null || !stack.isEmpty()){
-            //如果cur不为空，那么交换它的左右节点，然后把cur入栈，再遍历cur的左节点
+        //把头节点入栈
+        stack.push(cur);
+        //如果栈不为空，说明还有节点没交换完
+        while(!stack.isEmpty()){
+            //从栈中取出当前节点
+            cur = stack.pop();
+            //如果当前节点不为空，交换它的左右子节点，然后再把它的左右字节点入栈
             if(cur != null){
                 TreeNode tmp = cur.left;
                 cur.left = cur.right;
                 cur.right = tmp;
-                stack.push(cur);
-                cur = cur.left;
-            }else{ //如果cur为空，那么找到cur的父节点（栈顶） 再遍历cur的右节点
-                cur = stack.pop();
-                cur = cur.right;
+                stack.push(cur.right);
+                stack.push(cur.left);
             }
         }
         return root;

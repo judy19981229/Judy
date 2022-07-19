@@ -8,29 +8,15 @@ public class LeetCode141 {
 
     }
 
-    public static boolean hasCycle(ListNode head) {
-        ListNode fast=head;
-        ListNode slow=head;
-        while (fast!=slow){
-           if(fast==null || fast.next==null){
-               return false;
-           }
-           fast=fast.next.next;
-           slow=slow.next;
-       }
-        return true;
-    }
-
-    public boolean hasCycle0(ListNode head) {
-        if(head==null){return false;}
-        ListNode fast=head.next;
-        ListNode slow=head;
-        while (fast!=slow){
-            if(fast==null || fast.next==null){
-                return false;
-            }
-            fast=fast.next.next;
-            slow=slow.next;
+    public boolean hasCycle(ListNode head) {
+        //特殊情况
+        if(head == null || head.next == null) return false;
+        ListNode fast = head.next;
+        ListNode slow = head;
+        while(fast != slow ){
+            if(fast == null || fast.next == null) return false;
+            fast = fast.next.next;
+            slow = slow.next;
         }
         return true;
     }

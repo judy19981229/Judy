@@ -7,43 +7,42 @@ public class LeetCode105 {
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if(preorder.length == 1) return new TreeNode(preorder[0]);
-        //根节点是前序遍历的第一个值
+        //前序遍历：根左右
+        //中序遍历：左根右
         TreeNode root = new TreeNode(preorder[0]);
         TreeNode cur = root;
-        //pre用来遍历前序遍历preorder
-        int pre = 0;
-        //in用来遍历中序遍历inorder
-        int in = 0;
         Deque<TreeNode> stack = new LinkedList<>();
-        //把根节点放入栈中，pre + 1 指向下一个元素
+        //先把根结点入栈
         stack.push(cur);
-        pre++;
-        //根据pre来遍历preorder
+        //前序遍历的下标（根结点入栈，已经前序遍历一个了）
+        int pre = 1;
+        //中序遍历的下标
+        int in = 0;
+        //循环 前序遍历 根据pre来遍历preorder
         while(pre < preorder.length){
-            //如果当前节点的值不等于中序遍历的值,说明下一个节点还是左子树
+            //当前节点的值和中序遍历的值不相同，说明前序遍历的下一个还是左节点
+            //设置cur的左节点（值为前序遍历时pre下标的值），并把cur的左节点入栈
             if(cur.val != inorder[in]){
-                cur.left = new TreeNode(preorder[pre]);
+                cur.left = new TreeNode(preorder[pre++]);
                 cur = cur.left;
                 stack.push(cur);
             }
-            //如果当前节点的值等于中序遍历的值,说明下一个节点是右子树
-            //因为中序遍历时左根右，前序遍历是根左右，会在遍历到已经没有左子树的时候相等
-            //这时候我们就要找到那个根节点，下一个节点就是它的右子树
+            //如果当前节点的值等于中序遍历的值,说明前序遍历下一个节点是右节点
             else{
-                //前序遍历：根左右 中序遍历：左根右
-                //这时候把已经前序遍历的节点倒着找，中序遍历的节点正着找
-                //如果继续相等，那么就说明这个节点没有右子树
-                //如果这时候已经不相等了，那么就说明这个节点是右子树了
-                //我们需要往回找到最后一个相等的节点，下一个节点就是它的右子树
+                //前序遍历往回找，中序遍历继续向下遍历，找最后一个相同的节点
+                //就是前序遍历下一个右节点的根结点
+                //这时的cur就是那个根节点
                 while(!stack.isEmpty() && stack.peek().val == inorder[in]){
                     cur = stack.pop();
+                    //这里in++不能写在stack.peek().val == inorder[in]这里
+                    //不然找到的就不是最后一个相等的位置了（不相等了in不会再++）
                     in++;
                 }
-                cur.right = new TreeNode(preorder[pre]);
+                //设置cur的右节点（值为前序遍历时pre下标的值），并把cur的右节点入栈
+                cur.right = new TreeNode(preorder[pre++]);
                 cur = cur.right;
                 stack.push(cur);
             }
-            pre++;
         }
         return root;
     }
