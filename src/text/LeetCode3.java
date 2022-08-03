@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class LeetCode3 {
     public static void main(String[] args) {
+        System.out.println('z' - 'a' == 25);
 
     }
     public int lengthOfLongestSubstring(String s) {
@@ -16,7 +17,7 @@ public class LeetCode3 {
             char cur = s.charAt(end);
             //如果当前值出现过，start变成上一次出现位置后面1位（从后面1位开始不重复）
             if(map.containsKey(cur)){
-                //防止start跑到start前面，需要判断一下大小
+                //防止start跑到当前start值前面，需要判断一下大小
                 start = Math.max(start, map.get(cur) + 1);
             }
             //不管有没有出现过，都要放入HashMap当前字符和他最后一次出现的下标

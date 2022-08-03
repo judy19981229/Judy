@@ -1,9 +1,11 @@
 package text;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class LeetCode76 {
+
     public String minWindow(String s, String t) {
         //特殊情况
         if (s.equals(t)) return s;
@@ -27,6 +29,7 @@ public class LeetCode76 {
             //getOrDefault方法，有value就获得，没有就放一个初值（第二个参数0）进去
             hs.put(right, hs.getOrDefault(right, 0) + 1);
             //如果ht中有s的右窗口字母，并且hs中的个数要小于等于ht中的个数，可以匹配的个数+1
+            //这里判断条件是小于等于，因为我们先将字符放入hash表中，所以等于的情况也是匹配了的
             if (ht.containsKey(right) && hs.get(right) <= ht.get(right)) {
                 count++;
             }

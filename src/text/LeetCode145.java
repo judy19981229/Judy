@@ -6,39 +6,35 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class LeetCode145 {
+
     public static void main(String[] args) {
 
     }
-    public List<Integer> postorderTraversal1(TreeNode root) {
-        List<Integer> list=new ArrayList<>();
-        postorder(root,list);
-        return list;
-    }
 
+    List<Integer> list=new ArrayList<>();
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> list=new ArrayList<>();
-        if(root==null){return list;}
-        Deque<TreeNode> stack=new LinkedList<>();
-        Deque<Integer> statusStack=new LinkedList<>();
-        stack.push(root);
-        statusStack.push(0);
-        while(!stack.isEmpty()){
-            switch (statusStack.pop()){
-                case 0:
-                    statusStack.push(1);
-                    if(stack.peek().left!=null){
-                        stack.push(stack.peek().left);
-                        statusStack.push(0); }
-                    break;
-                case 1:
-                    statusStack.push(2);
-                    if(stack.peek().right!=null){
-                        stack.push(stack.peek().right);
-                        statusStack.push(0); }
-                    break;
-                case 2:
-                    list.add(stack.pop().val);
-                    break;
+        if(root == null) return list;
+        Deque<TreeNode> stack = new LinkedList<TreeNode>();
+        //pre节点用来记录遍历树的前一个节点，如果前一个节点是右节点，那么就说明当前根节点可以放入集合中了
+        TreeNode pre = root;
+        //root不为null，说明当前节点可能还有子节点
+        //stack不为null，说明当前节点一定有父节点
+        while(root != null || !stack.isEmpty()){
+            //先遍历root的左节点，找到最后一个左节点
+            while(root != null){
+                stack.push(root);
+                root = root.left;
+            }
+            //如果有右边节点，那么该节点就不能先出栈，要遍历完右边节点之后才能出栈
+            root = stack.peek();
+            if(root.right == null || root.right == pre){
+                list.add(root.val);
+                stack.pop();
+                pre = root;
+                //这里的root是一个左右节点都遍历完的根节点，需要设置为null，不然就无法向上继续遍历了
+                root = null;
+            }else{
+                root = root.right;
             }
         }
         return list;
